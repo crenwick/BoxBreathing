@@ -12,16 +12,49 @@
 		178B92EE1E452C8B00305988 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 178B92EC1E452C8B00305988 /* Main.storyboard */; };
 		178B92F01E452C8B00305988 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 178B92EF1E452C8B00305988 /* Assets.xcassets */; };
 		178B92F31E452C8B00305988 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 178B92F11E452C8B00305988 /* LaunchScreen.storyboard */; };
+		178B93011E452D7F00305988 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 178B93001E452D7F00305988 /* NotificationCenter.framework */; };
+		178B93041E452D7F00305988 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178B93031E452D7F00305988 /* TodayViewController.swift */; };
+		178B93071E452D7F00305988 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 178B93051E452D7F00305988 /* MainInterface.storyboard */; };
+		178B930B1E452D7F00305988 /* Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 178B92FE1E452D7F00305988 /* Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		178B93091E452D7F00305988 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 178B92DD1E452C8A00305988 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 178B92FD1E452D7F00305988;
+			remoteInfo = Widget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		178B930F1E452D7F00305988 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				178B930B1E452D7F00305988 /* Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		178B92E51E452C8B00305988 /* BoxBreathing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoxBreathing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		178B92E51E452C8B00305988 /* Box Breathing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Box Breathing.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		178B92E81E452C8B00305988 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		178B92EA1E452C8B00305988 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		178B92ED1E452C8B00305988 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		178B92EF1E452C8B00305988 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		178B92F21E452C8B00305988 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		178B92F41E452C8B00305988 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		178B92FE1E452D7F00305988 /* Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Widget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		178B93001E452D7F00305988 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		178B93031E452D7F00305988 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		178B93061E452D7F00305988 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		178B93081E452D7F00305988 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +65,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		178B92FB1E452D7F00305988 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				178B93011E452D7F00305988 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -39,6 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				178B92E71E452C8B00305988 /* BoxBreathing */,
+				178B93021E452D7F00305988 /* Widget */,
+				178B92FF1E452D7F00305988 /* Frameworks */,
 				178B92E61E452C8B00305988 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,7 +89,8 @@
 		178B92E61E452C8B00305988 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				178B92E51E452C8B00305988 /* BoxBreathing.app */,
+				178B92E51E452C8B00305988 /* Box Breathing.app */,
+				178B92FE1E452D7F00305988 /* Widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,25 +108,62 @@
 			path = BoxBreathing;
 			sourceTree = "<group>";
 		};
+		178B92FF1E452D7F00305988 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				178B93001E452D7F00305988 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		178B93021E452D7F00305988 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				178B93031E452D7F00305988 /* TodayViewController.swift */,
+				178B93051E452D7F00305988 /* MainInterface.storyboard */,
+				178B93081E452D7F00305988 /* Info.plist */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		178B92E41E452C8B00305988 /* BoxBreathing */ = {
+		178B92E41E452C8B00305988 /* Box Breathing */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 178B92F71E452C8B00305988 /* Build configuration list for PBXNativeTarget "BoxBreathing" */;
+			buildConfigurationList = 178B92F71E452C8B00305988 /* Build configuration list for PBXNativeTarget "Box Breathing" */;
 			buildPhases = (
 				178B92E11E452C8B00305988 /* Sources */,
 				178B92E21E452C8B00305988 /* Frameworks */,
 				178B92E31E452C8B00305988 /* Resources */,
+				178B930F1E452D7F00305988 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				178B930A1E452D7F00305988 /* PBXTargetDependency */,
+			);
+			name = "Box Breathing";
+			productName = BoxBreathing;
+			productReference = 178B92E51E452C8B00305988 /* Box Breathing.app */;
+			productType = "com.apple.product-type.application";
+		};
+		178B92FD1E452D7F00305988 /* Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 178B930C1E452D7F00305988 /* Build configuration list for PBXNativeTarget "Widget" */;
+			buildPhases = (
+				178B92FA1E452D7F00305988 /* Sources */,
+				178B92FB1E452D7F00305988 /* Frameworks */,
+				178B92FC1E452D7F00305988 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = BoxBreathing;
-			productName = BoxBreathing;
-			productReference = 178B92E51E452C8B00305988 /* BoxBreathing.app */;
-			productType = "com.apple.product-type.application";
+			name = Widget;
+			productName = Widget;
+			productReference = 178B92FE1E452D7F00305988 /* Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -99,9 +180,14 @@
 						DevelopmentTeam = KQ3E95JZ2R;
 						ProvisioningStyle = Automatic;
 					};
+					178B92FD1E452D7F00305988 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = KQ3E95JZ2R;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
-			buildConfigurationList = 178B92E01E452C8A00305988 /* Build configuration list for PBXProject "BoxBreathing" */;
+			buildConfigurationList = 178B92E01E452C8A00305988 /* Build configuration list for PBXProject "Box Breathing" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -114,7 +200,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				178B92E41E452C8B00305988 /* BoxBreathing */,
+				178B92E41E452C8B00305988 /* Box Breathing */,
+				178B92FD1E452D7F00305988 /* Widget */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +217,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		178B92FC1E452D7F00305988 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				178B93071E452D7F00305988 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -142,7 +237,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		178B92FA1E452D7F00305988 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				178B93041E452D7F00305988 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		178B930A1E452D7F00305988 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 178B92FD1E452D7F00305988 /* Widget */;
+			targetProxy = 178B93091E452D7F00305988 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		178B92EC1E452C8B00305988 /* Main.storyboard */ = {
@@ -159,6 +270,14 @@
 				178B92F21E452C8B00305988 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		178B93051E452D7F00305988 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				178B93061E452D7F00305988 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -258,6 +377,7 @@
 		178B92F81E452C8B00305988 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = KQ3E95JZ2R;
 				INFOPLIST_FILE = BoxBreathing/Info.plist;
@@ -271,6 +391,7 @@
 		178B92F91E452C8B00305988 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = KQ3E95JZ2R;
 				INFOPLIST_FILE = BoxBreathing/Info.plist;
@@ -281,10 +402,36 @@
 			};
 			name = Release;
 		};
+		178B930D1E452D7F00305988 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = KQ3E95JZ2R;
+				INFOPLIST_FILE = Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.crenwick.BoxBreathing.Widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		178B930E1E452D7F00305988 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = KQ3E95JZ2R;
+				INFOPLIST_FILE = Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.crenwick.BoxBreathing.Widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		178B92E01E452C8A00305988 /* Build configuration list for PBXProject "BoxBreathing" */ = {
+		178B92E01E452C8A00305988 /* Build configuration list for PBXProject "Box Breathing" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				178B92F51E452C8B00305988 /* Debug */,
@@ -293,11 +440,19 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		178B92F71E452C8B00305988 /* Build configuration list for PBXNativeTarget "BoxBreathing" */ = {
+		178B92F71E452C8B00305988 /* Build configuration list for PBXNativeTarget "Box Breathing" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				178B92F81E452C8B00305988 /* Debug */,
 				178B92F91E452C8B00305988 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		178B930C1E452D7F00305988 /* Build configuration list for PBXNativeTarget "Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				178B930D1E452D7F00305988 /* Debug */,
+				178B930E1E452D7F00305988 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
