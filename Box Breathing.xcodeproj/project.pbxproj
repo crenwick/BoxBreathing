@@ -184,6 +184,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = KQ3E95JZ2R;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -447,6 +452,7 @@
 				178B92F91E452C8B00305988 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		178B930C1E452D7F00305988 /* Build configuration list for PBXNativeTarget "Widget" */ = {
 			isa = XCConfigurationList;
@@ -455,6 +461,7 @@
 				178B930E1E452D7F00305988 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

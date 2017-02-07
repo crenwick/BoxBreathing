@@ -7,7 +7,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -24,23 +23,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="86R-DY-ZGL">
-                                <rect key="frame" x="100" y="0.0" width="120" height="120"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vAJ-wS-znF">
-                                        <rect key="frame" x="30" y="30" width="60" height="60"/>
-                                        <color key="backgroundColor" red="0.13312509655952454" green="0.43570128083229065" blue="0.6269376277923584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="vAJ-wS-znF" secondAttribute="height" multiplier="1:1" id="0J6-vD-iZY"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <color key="backgroundColor" red="0.98823529409999999" green="0.52549019610000003" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="110" y="10" width="100" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="Fxo-VZ-8pj"/>
+                                    <constraint firstAttribute="width" constant="100" id="Fxo-VZ-8pj"/>
                                     <constraint firstAttribute="width" secondItem="86R-DY-ZGL" secondAttribute="height" multiplier="1:1" id="dFW-cX-zob"/>
-                                    <constraint firstItem="vAJ-wS-znF" firstAttribute="width" secondItem="86R-DY-ZGL" secondAttribute="width" multiplier="1:2" id="n18-Zo-YyB"/>
-                                    <constraint firstItem="vAJ-wS-znF" firstAttribute="centerY" secondItem="86R-DY-ZGL" secondAttribute="centerY" id="rRU-KB-2he"/>
-                                    <constraint firstItem="vAJ-wS-znF" firstAttribute="centerX" secondItem="86R-DY-ZGL" secondAttribute="centerX" id="zHo-xT-7cZ"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -55,6 +41,9 @@
                     <nil key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="120"/>
+                    <connections>
+                        <outlet property="borderView" destination="86R-DY-ZGL" id="gtA-ku-vBy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
